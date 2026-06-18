@@ -1,0 +1,40 @@
+<div style="padding: 20px; font-family: sans-serif; max-width: 800px; margin: auto;">
+  <h2 style="align-content: center">Cloud Project PoC — App</h2>
+  <img src="assets/Logo_ESPRIT_Ariana.jpg">
+  <form [formGroup]="itemForm" (ngSubmit)="onSubmit()" style="margin-bottom: 30px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <div style="margin-bottom: 12px;">
+      <label style="display:block; margin-bottom:4px; font-weight: bold;">Item Name:</label>
+      <input type="text" formControlName="name" style="width:100%; padding:8px; box-sizing: border-box;" required>
+    </div>
+    <div style="margin-bottom: 12px;">
+      <label style="display:block; margin-bottom:4px; font-weight: bold;">Description:</label>
+      <textarea formControlName="description" style="width:100%; padding:8px; box-sizing: border-box;" required></textarea>
+    </div>
+    <button type="submit" [disabled]="itemForm.invalid" style="padding: 10px 15px; cursor: pointer; background: red; color: white; border: none; border-radius: 4px;">Add Item</button>
+  </form>
+
+  <h3>Stored Items</h3>
+  <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
+    <thead>
+    <tr style="background: #f4f4f4;">
+      <th style="padding: 8px;">ID</th>
+      <th style="padding: 8px;">Name</th>
+      <th style="padding: 8px;">Description</th>
+      <th style="padding: 8px;">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of items">
+      <td style="padding: 8px;">{{ item.id }}</td>
+      <td style="padding: 8px;">{{ item.name }}</td>
+      <td style="padding: 8px;">{{ item.description }}</td>
+      <td style="padding: 8px;">
+        <button (click)="onDelete(item.id!)" style="color: white; background: #dc3545; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">Delete</button>
+      </td>
+    </tr>
+    <tr *ngIf="items.length === 0">
+      <td colspan="4" style="text-align: center; padding: 15px;">No data available.</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/composer" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/cloud-poc-api/vendor/doctrine/dbal" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.4">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+</project>
