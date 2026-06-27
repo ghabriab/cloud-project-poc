@@ -24,3 +24,13 @@ RUN mkdir -p /var/www/html/var && chown -R www-data:www-data /var/www/html/var
 
 # Install PHP dependencies
 RUN composer install --no-scripts --no-interaction
+
+
+# Install PHP dependencies
+RUN composer install --no-dev --no-scripts --no-interaction --optimize-autoloader
+
+# FIX: Set final permissions for the whole application
+RUN chown -R www-data:www-data /var/www/html
+
+# Ensure the entrypoint has the right permissions (if you add one later)
+USER www-data
