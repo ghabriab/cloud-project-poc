@@ -12,8 +12,8 @@ export interface Item {
   providedIn: 'root'
 })
 export class ItemService {
-  private apiUrl = 'http://192.168.1.51:30080/api/items';
-  
+  private apiUrl = 'http://192.168.1.50/api/items';
+
   constructor(private http: HttpClient) {}
 
   getItems(): Observable<Item[]> {
