@@ -12,25 +12,23 @@ ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-# Copy project files
+# Set working directory
 WORKDIR /var/www/html
+
+# Copy project files into the container
 COPY . .
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Create the var directory explicitly and set permissions
-RUN mkdir -p /var/www/html/var && chown -R www-data:www-data /var/www/html/var
+# Allow Composer to run as root during the build process
+ENV COMPOSER_ALLOW_SUPERUSER=1
 
-# Install PHP dependencies
-RUN composer install --no-scripts --no-interaction
-
-
-# Install PHP dependencies
+# Install PHP dependencies (Single, optimized install)
 RUN composer install --no-dev --no-scripts --no-interaction --optimize-autoloader
 
-# FIX: Set final permissions for the whole application
-RUN chown -R www-data:www-data /var/www/html
+# Create the var directory explicitly and set final permissions for Apache
+RUN mkdir -p /var/www/html/var && chown -R www-data:www-data /var/www/html
 
-# Ensure the entrypoint has the right permissions (if you add one later)
-USER www-data
+# DO NOT add "USER www-data" here.
+# Apache must start as root to bind to port 80, and will automatically run child processes as www-data.
